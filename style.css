@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ever{
+    display: flex;
+    padding-top: 10rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ADD TASK */
+
+h1{
+    font-size: 1.8rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#7F5283;
+    padding-bottom: 2.8rem;
+}
+
+#newtask{
+    border:1px solid #7F5283;
+    padding:8px 12px;
+    background-color: transparent;
+    width: 230px;
+}
+
+#newtask:focus{
+    outline: none;
+}
+
+#newbtn{
+    border:1px solid #7F5283;
+    background-color: transparent;
+    padding:8px 12px;
+    color:#7F5283;
+    transition: .5s all;
+    width: 70px;
+}
+
+#newbtn:hover{
+    background-color:#7F5283;
+    color:white;
+}
+
+/* TASK LİST */
+
+.tasks{
+    margin-top:3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    list-style-type:none;
+    padding: 0;
+}
+.task{
+    width: 290px;
+    border: 1px solid #7F5283; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:6px 12px;
+    margin-bottom:1rem;
+}
+
+.task .taskname{
+    color: #000;
+    padding-left: .4rem;
+}
+
+i{
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: .6s all;
+    color: #7F5283;
+}
+i:hover{
+    transform: rotate(360deg);
+}
+
+#clearall{
+    margin-top: 1.5rem;
+    border:1px solid #7F5283;
+    background-color: transparent;
+    padding:8px 12px;
+    color:#7F5283;
+    transition: .5s all;
+    width: 120px;
+    height: 40px;
+    display: block;
+}
+
+#clearall:hover{
+    background-color:#7F5283;
+    color:white;
+}
